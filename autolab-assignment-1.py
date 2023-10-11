@@ -28,6 +28,7 @@ class PetriNet:
         return self.places.get(place, 0)
 
     def is_enabled(self, transition):
+        print(self.transitions)
         if transition in self.transitions:
             transition_obj = self.transitions[transition]
             for pre in transition_obj['pre']:
